@@ -33,7 +33,6 @@ order by Customer desc;
 select avg(`Churn_Probability`) 
 from `sales_and_customer_insights.csv`;
 
-
 select `Preferred_Purchase_Times`,count(*) 
 from `sales_and_customer_insights.csv`
 group by `Preferred_Purchase_Times`;
