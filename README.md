@@ -168,22 +168,33 @@ Sales & Customer Insights Dashboard
 
 # 📂 Project Structure
 Sales-Customer-Insights-Dashboard/
+
 │
 ├── Dataset/
+
 │   └── sales_and_customer_insights.csv
+
 │
 ├── SQL/
+
 │   └── business_queries.sql
+
 │
 ├── PowerBI/
+
 │   └── Sales_Customer_Insights.pbix
+
 │
 ├── Dashboard/
+
 │   └── Dashboard.png
+
 │
 ├── README.md
+
 │
 └── LICENSE
+
 # 🚀 Skills Demonstrated
 Business Intelligence
 
