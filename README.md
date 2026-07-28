@@ -49,13 +49,20 @@ Interactive Dashboard
         ▼
 # Business Insights & Decision Support
 📊 Executive Dashboard KPIs
+
 KPI	Value
+
 💰 Total Revenue	1M
+
 👥 Total Customers	10K
+
 🔁 Average Purchase Frequency	9.96
+
 💎 Average Customer Lifetime Value	5.03K
 
+
 These KPIs provide executives with a quick overview of overall business performance and customer engagement.
+
 
 # 📈 Dashboard Features
 
