@@ -1,233 +1,189 @@
 # Sales-Customer-Insights-Analysis-SQL-Power-BI-DAX
-End-to-End Business Intelligence Project | SQL • Power BI • DAX
+An interactive Business Intelligence dashboard developed to transform raw customer transaction data into meaningful business insights. This project analyzes customer purchasing behavior, regional sales performance, customer lifetime value, churn probability, seasonal trends, and revenue distribution using SQL, Power BI, and DAX. The dashboard empowers decision-makers with real-time KPIs and interactive visualizations, enabling data-driven strategies for customer retention, revenue growth, and business performance optimization.
 
-Transforming raw customer transaction data into actionable business insights through SQL analysis, interactive Power BI dashboards, and KPI-driven decision making.
+# 📖 Project Overview
 
-# 📌  Project Overview
+Modern businesses generate thousands of customer transactions every day. However, raw data alone cannot support strategic decision-making without proper analysis and visualization.
 
-This project demonstrates a complete Business Intelligence (BI) workflow using MySQL, Power BI, and DAX. The objective was to analyze customer purchasing behavior, sales performance, revenue distribution, customer lifetime value, and churn indicators to help business stakeholders make data-driven decisions.
+This project demonstrates a complete Business Intelligence workflow, beginning with raw customer data and ending with an executive-level dashboard. Using MySQL for business analysis, Power BI for visualization, and DAX for KPI calculations, the project converts complex datasets into actionable insights that help business leaders understand customer behavior, monitor business performance, identify growth opportunities, and improve decision-making.
 
-The dashboard provides executives with a single view of customer and sales performance by tracking KPIs, regional performance, purchasing patterns, seasonal trends, and customer preferences.
+The dashboard was designed with the mindset of a Business Intelligence Analyst, focusing on executive reporting, interactive filtering, KPI monitoring, and data storytelling.
 
-# 🎯 Business Problem
+# 🎯 Business Objective
 
-Retail businesses often struggle to answer questions such as:
+The primary objective of this project is to answer critical business questions, including:
 
 Which regions generate the highest revenue?
-Which product categories are purchased most frequently?
-When do customers usually make purchases?
-What is the average customer lifetime value?
-How frequently do customers purchase?
-Which customers are more likely to churn?
-Are there seasonal trends affecting sales?
-
-This dashboard answers these questions using interactive visualizations and SQL-driven analysis.
-
-# 🛠 Tech Stack
+Which product categories are most popular among customers?
+When are customers most likely to make purchases?
+How valuable is the average customer over their lifetime?
+How frequently do customers make purchases?
+Which customers are at greater risk of churn?
+Are there seasonal or monthly trends affecting revenue?
+How can management use these insights to improve business performance?
+🛠️ Technologies Used
 Technology	Purpose
-MySQL	Data Extraction & Business Queries
-Power BI	Dashboard Development
-DAX	KPI Measures & Calculations
-Power Query	Data Cleaning & Transformation
-Excel/CSV	Source Dataset
-# 📂 Project Workflow
-CSV Dataset
-      │
-      ▼
-Data Cleaning
-      │
-      ▼
-Import into MySQL
-      │
-      ▼
-Business SQL Analysis
-      │
-      ▼
-Power BI Data Model
-      │
-      ▼
-DAX Measures
-      │
-      ▼
+MySQL	Business data analysis and querying
+Power BI	Dashboard development and visualization
+DAX	KPI calculations and business metrics
+Power Query	Data cleaning and transformation
+CSV Dataset	Source data
+# 🔄 Business Intelligence Workflow
+Raw Customer Dataset
+        │
+        ▼
+Data Cleaning & Transformation
+        │
+        ▼
+Business Analysis using SQL
+        │
+        ▼
+Data Modeling in Power BI
+        │
+        ▼
+DAX Measures & KPIs
+        │
+        ▼
 Interactive Dashboard
-      │
-      ▼
-Business Insights
-# 📊 Dashboard KPIs
-
-The dashboard tracks four executive-level KPIs:
-
+        │
+        ▼
+# Business Insights & Decision Support
+📊 Executive Dashboard KPIs
 KPI	Value
-Average Purchase Frequency	9.96
-Average Customer Lifetime Value	5.03K
-Total Revenue	1M
-Total Customers	10K
+💰 Total Revenue	1M
+👥 Total Customers	10K
+🔁 Average Purchase Frequency	9.96
+💎 Average Customer Lifetime Value	5.03K
 
-These KPIs provide an instant overview of overall business performance.
-
-# 🔍 SQL Business Analysis Performed
-1️⃣ Revenue by Region
-SELECT Region,
-SUM(Average_Order_Value) AS TotalSales
-FROM sales_and_customer_insights
-GROUP BY Region;
-Result
-Region	Revenue
-South America	278,749
-Europe	277,476
-Asia	272,449
-North America	271,386
-Business Insight
-Revenue is distributed fairly evenly across all regions.
-South America slightly outperforms the other markets.
-No single region dominates sales, indicating a diversified customer base.
-# 2️⃣ Most Purchased Product Categories
-SELECT Most_Frequent_Category,
-COUNT(*)
-FROM sales_and_customer_insights
-GROUP BY Most_Frequent_Category;
-Result
-Category	Customers
-Electronics	2,567
-Clothing	2,510
-Home	2,476
-Sports	2,447
-Business Insight
-Electronics is the highest-performing category.
-Customer demand is balanced across all categories.
-Product diversification appears healthy.
-# 3️⃣ Preferred Purchase Time
-SELECT Preferred_Purchase_Times,
-COUNT(*)
-FROM sales_and_customer_insights
-GROUP BY Preferred_Purchase_Times;
-Result
-Time	Customers
-Evening	3,433
-Afternoon	3,354
-Morning	3,213
-Business Insight
-Evening has the highest shopping activity.
-Marketing campaigns should prioritize evening hours.
-Promotional emails and notifications can be scheduled before peak shopping time.
-# 4️⃣ Monthly Revenue Trend
-SELECT MONTH(Peak_Sales_Date),
-SUM(Average_Order_Value)
-FROM sales_and_customer_insights
-GROUP BY MONTH(Peak_Sales_Date);
-Business Insight
-Revenue remains relatively stable throughout the year.
-January and May recorded the strongest sales.
-February experienced the lowest monthly revenue.
-No major seasonal fluctuations were observed.
-# 5️⃣ Customer Lifetime Value
-SELECT AVG(Lifetime_Value)
-FROM sales_and_customer_insights;
-Insight
-
-Average customer lifetime value is approximately 5.03K, indicating consistent long-term customer contribution.
-
-# 6️⃣ Purchase Frequency
-SELECT AVG(Purchase_Frequency)
-FROM sales_and_customer_insights;
-Insight
-
-Customers purchase nearly 10 times on average, demonstrating strong customer engagement.
-
-# 7️⃣ Churn Analysis
-SELECT AVG(Churn_Probability)
-FROM sales_and_customer_insights;
-Insight
-
-Average churn probability helps identify customer retention risks and supports proactive loyalty strategies.
+These KPIs provide executives with a quick overview of overall business performance and customer engagement.
 
 # 📈 Dashboard Features
 
-✔ Executive KPI Cards
+The dashboard provides interactive analysis through:
 
-✔ Revenue Analysis
+Executive KPI Cards
+Regional Revenue Analysis
+Monthly Revenue Trend
+Seasonal Revenue Performance
+Product Category Distribution
+Customer Purchase Frequency Analysis
+Customer Lifetime Value Monitoring
+Churn Probability Analysis
+Interactive Slicers for Region, Season, and Product Category
+Dynamic Cross-Filtering Across Visuals
+# 🔍 Business Analysis Summary
+# 🌍 Regional Revenue Performance
 
-✔ Customer Segmentation
+Revenue is distributed across four major regions with South America generating the highest overall sales. Although the difference between regions is relatively small, the analysis highlights opportunities for region-specific marketing and expansion strategies.
 
-✔ Category Distribution
+# 🛍️ Product Category Performance
 
-✔ Seasonal Sales Analysis
+Customer purchases are well distributed across all product categories. Electronics emerged as the highest-performing category, indicating stronger customer demand, while Clothing, Home, and Sports maintained balanced performance.
 
-✔ Monthly Revenue Trend
+# ⏰ Customer Purchase Behavior
 
-✔ Customer Lifetime Value
+Analysis of purchasing times revealed that Evening is the preferred shopping period, followed closely by Afternoon and Morning. This insight can help businesses schedule promotional campaigns and customer engagement activities during peak purchasing hours.
 
-✔ Churn Monitoring
+# 📅 Monthly Revenue Trends
 
-✔ Interactive Filters
+Revenue remained relatively consistent throughout the year, indicating stable business performance. January and May recorded the strongest sales, while February experienced slightly lower revenue, suggesting opportunities for targeted seasonal campaigns.
 
-Region
-Season
-Product Category
+# 💎 Customer Lifetime Value
+
+Customers generate an average lifetime value of 5.03K, demonstrating strong long-term business value and healthy customer relationships.
+
+# 🔁 Purchase Frequency
+
+Customers purchase nearly 10 times on average, reflecting consistent engagement and repeat purchasing behavior.
+
+# 📉 Customer Churn Analysis
+
+Churn probability metrics provide valuable insight into customer retention risks. These findings can help businesses identify customers requiring proactive engagement through loyalty programs and personalized marketing campaigns.
+
 # 💡 Key Business Insights
-South America generates the highest revenue among all regions.
-Electronics is the most purchased product category.
-Customers are most active during the evening.
-Customer purchasing behavior remains consistent throughout the year.
-Average purchase frequency (~10 purchases) indicates strong customer loyalty.
-Average customer lifetime value exceeds 5K, highlighting high long-term customer value.
-Revenue distribution is balanced across regions, reducing dependency on a single market.
-Churn analysis enables targeted customer retention strategies.
-📊 Power BI Visualizations
-KPI Cards
-Revenue by Region (Column Chart)
-Monthly Revenue Trend (Line Chart)
-Revenue by Season (Column Chart)
-Product Category Distribution (Donut Chart)
-Lifetime Value vs Churn (Scatter Plot)
-Interactive Slicers
-Dynamic Filtering
-Responsive Dashboard Layout
-## 🚀 Skills Demonstrated
-SQL
-Aggregations
-GROUP BY
-Filtering
-Date Functions
-Business Query Writing
-Customer Analysis
-Power BI
-Dashboard Design
-Interactive Reports
-Data Modeling
-Drill Filtering
-KPI Design
-DAX
-SUM
-AVERAGE
-COUNT
-Calculated Measures
-Business KPIs
-Business Intelligence
-Customer Analytics
-Sales Analytics
-Revenue Analysis
-Customer Segmentation
-Executive Dashboarding
-KPI Reporting
-Data Storytelling
-📁 Repository Structure
+Generated insights from 10,000 customer records.
+Total business revenue exceeded 1 million.
+South America achieved the highest regional revenue.
+Electronics became the most frequently purchased product category.
+Evening was identified as the peak customer purchasing period.
+Average customer lifetime value reached 5.03K.
+Customers purchased nearly 10 times on average, indicating strong customer loyalty.
+Revenue remained stable throughout the year with only minor monthly variations.
+Interactive dashboard filters allow detailed analysis by Region, Season, and Product Category.
+# 💼 Business Impact
+
+This dashboard enables decision-makers to:
+
+Monitor overall business performance using executive KPIs.
+Compare revenue performance across different regions.
+Identify the most valuable customer segments.
+Understand customer purchasing behavior.
+Improve customer retention strategies through churn analysis.
+Optimize marketing campaigns based on customer purchase timing.
+Support strategic planning with interactive, data-driven insights.
+# 🎨 Dashboard Preview
+
+Sales & Customer Insights Dashboard
+
+(Insert your dashboard screenshot here)
+
+# 📂 Project Structure
 Sales-Customer-Insights-Dashboard/
 │
 ├── Dataset/
 │   └── sales_and_customer_insights.csv
 │
 ├── SQL/
-│   └── Business_Queries.sql
+│   └── business_queries.sql
 │
 ├── PowerBI/
 │   └── Sales_Customer_Insights.pbix
 │
 ├── Dashboard/
-│   └── Dashboard_Screenshot.png
+│   └── Dashboard.png
 │
 ├── README.md
 │
 └── LICENSE
+# 🚀 Skills Demonstrated
+Business Intelligence
+Executive Dashboard Development
+KPI Reporting
+Data Storytelling
+Interactive Reporting
+Business Analytics
+Customer Analytics
+Revenue Analysis
+Customer Segmentation
+SQL
+Data Aggregation
+Filtering & Sorting
+Grouping
+Date Functions
+Business Query Development
+Performance Analysis
+Power BI
+Data Modeling
+Power Query
+Interactive Visualizations
+Dashboard Design
+Drill-Down Analysis
+Slicers & Filters
+DAX
+Calculated Measures
+KPI Development
+Aggregate Functions
+Business Metrics
+# ⭐ Why This Project Matters
+
+This project demonstrates the complete Business Intelligence lifecycle—from transforming raw customer data into executive-ready insights. It showcases practical skills in SQL, Power BI, DAX, and analytical thinking while emphasizing business impact rather than simply presenting visualizations.
+
+The dashboard is designed to support real-world decision-making by helping stakeholders monitor performance, understand customer behavior, identify revenue opportunities, and improve strategic planning through interactive data analysis.
+
+
+## Mishkat Ullah
+
+💼 Data Analyst
+📧 Email: themishkat.data@gmail.com
 
 
