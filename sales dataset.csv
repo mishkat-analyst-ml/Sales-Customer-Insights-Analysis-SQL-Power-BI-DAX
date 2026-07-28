@@ -1,0 +1,48 @@
+select * from `sales_and_customer_insights.csv`;
+select distinct(`Customer_ID`) 
+from `sales_and_customer_insights.csv`;
+select *  from `sales_and_customer_insights.csv` 
+where `Time_Between_Purchases` 
+and `Purchase_Frequency`
+and `Lifetime_Value`
+IS NOT NULL ;
+
+SELECT SUM(`Average_Order_Value`) 
+FROM `sales_and_customer_insights.csv`;
+
+SELECT AVG(`Lifetime_Value`) as average
+from `sales_and_customer_insights.csv`;
+
+select Region, 
+sum(`Average_Order_Value`) AS TotalSales
+from `sales_and_customer_insights.csv`
+group by Region
+order by TotalSales desc
+limit 5;
+
+SELECT Region, 
+AVG(Purchase_Frequency)
+From `sales_and_customer_insights.csv`
+group by Region;
+
+SELECT `Most_Frequent_Category`, COUNT(*) AS Customer
+from `sales_and_customer_insights.csv`
+group by `Most_Frequent_Category`
+order by Customer desc;
+
+select avg(`Churn_Probability`) 
+from `sales_and_customer_insights.csv`;
+
+
+select `Preferred_Purchase_Times`,count(*) 
+from `sales_and_customer_insights.csv`
+group by `Preferred_Purchase_Times`;
+
+SELECT month(`Peak_Sales_Date`),
+sum(`Average_Order_Value`)    
+From `sales_and_customer_insights.csv`
+group by month(`Peak_Sales_Date`) ;
+
+
+
+
