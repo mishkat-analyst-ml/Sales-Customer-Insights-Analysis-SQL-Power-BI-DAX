@@ -13,14 +13,22 @@ The dashboard was designed with the mindset of a Business Intelligence Analyst, 
 
 The primary objective of this project is to answer critical business questions, including:
 
-Which regions generate the highest revenue?
+Which regions generate the highest revenue? 
+
 Which product categories are most popular among customers?
+
 When are customers most likely to make purchases?
+
 How valuable is the average customer over their lifetime?
+
 How frequently do customers make purchases?
+
 Which customers are at greater risk of churn?
+
 Are there seasonal or monthly trends affecting revenue?
+
 How can management use these insights to improve business performance?
+
 🛠️ Technologies Used
 Technology	Purpose
 MySQL	Business data analysis and querying
