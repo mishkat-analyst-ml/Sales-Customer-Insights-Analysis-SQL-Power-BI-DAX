@@ -73,16 +73,26 @@ These KPIs provide executives with a quick overview of overall business performa
 
 The dashboard provides interactive analysis through:
 
-Executive KPI Cards
+Executive KPI Cards 
+
 Regional Revenue Analysis
+
 Monthly Revenue Trend
+
 Seasonal Revenue Performance
+
 Product Category Distribution
+
 Customer Purchase Frequency Analysis
+
 Customer Lifetime Value Monitoring
+
 Churn Probability Analysis
+
 Interactive Slicers for Region, Season, and Product Category
+
 Dynamic Cross-Filtering Across Visuals
+
 # 🔍 Business Analysis Summary
 # 🌍 Regional Revenue Performance
 
@@ -90,7 +100,8 @@ Revenue is distributed across four major regions with South America generating t
 
 # 🛍️ Product Category Performance
 
-Customer purchases are well distributed across all product categories. Electronics emerged as the highest-performing category, indicating stronger customer demand, while Clothing, Home, and Sports maintained balanced performance.
+Customer purchases are well distributed across all product categories. 
+Electronics emerged as the highest-performing category, indicating stronger customer demand, while Clothing, Home, and Sports maintained balanced performance.
 
 # ⏰ Customer Purchase Behavior
 
@@ -114,25 +125,41 @@ Churn probability metrics provide valuable insight into customer retention risks
 
 # 💡 Key Business Insights
 Generated insights from 10,000 customer records.
+
 Total business revenue exceeded 1 million.
+
 South America achieved the highest regional revenue.
+
 Electronics became the most frequently purchased product category.
+
 Evening was identified as the peak customer purchasing period.
-Average customer lifetime value reached 5.03K.
+
+Average customer lifetime value reached **5.03K**.
+
 Customers purchased nearly 10 times on average, indicating strong customer loyalty.
+
 Revenue remained stable throughout the year with only minor monthly variations.
+
 Interactive dashboard filters allow detailed analysis by Region, Season, and Product Category.
+
 # 💼 Business Impact
 
 This dashboard enables decision-makers to:
 
 Monitor overall business performance using executive KPIs.
+
 Compare revenue performance across different regions.
+
 Identify the most valuable customer segments.
+
 Understand customer purchasing behavior.
+
 Improve customer retention strategies through churn analysis.
+
 Optimize marketing campaigns based on customer purchase timing.
+
 Support strategic planning with interactive, data-driven insights.
+
 # 🎨 Dashboard Preview
 
 Sales & Customer Insights Dashboard
@@ -159,33 +186,59 @@ Sales-Customer-Insights-Dashboard/
 └── LICENSE
 # 🚀 Skills Demonstrated
 Business Intelligence
+
 Executive Dashboard Development
+
 KPI Reporting
+
 Data Storytelling
+
 Interactive Reporting
+
 Business Analytics
+
 Customer Analytics
+
 Revenue Analysis
+
 Customer Segmentation
+
 SQL
+
 Data Aggregation
+
 Filtering & Sorting
+
 Grouping
+
 Date Functions
+
 Business Query Development
+
 Performance Analysis
+
 Power BI
-Data Modeling
+
 Power Query
+
 Interactive Visualizations
+
 Dashboard Design
+
 Drill-Down Analysis
+
 Slicers & Filters
+
 DAX
+
 Calculated Measures
+
 KPI Development
+
 Aggregate Functions
+
 Business Metrics
+
 # ⭐ Why This Project Matters
 
 This project demonstrates the complete Business Intelligence lifecycle—from transforming raw customer data into executive-ready insights. It showcases practical skills in SQL, Power BI, DAX, and analytical thinking while emphasizing business impact rather than simply presenting visualizations.
