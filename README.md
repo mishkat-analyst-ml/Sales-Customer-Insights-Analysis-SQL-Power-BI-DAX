@@ -38,9 +38,6 @@ Data Cleaning & Transformation
 Business Analysis using SQL
         │
         ▼
-Data Modeling in Power BI
-        │
-        ▼
 DAX Measures & KPIs
         │
         ▼
